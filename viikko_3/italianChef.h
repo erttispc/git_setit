@@ -8,7 +8,7 @@ class ItalianChef: public Chef{
     int water;
     int makePizza();
   public:
-    ItalianChef(std::string){std::cout << "italian constructor" << std::endl;}
-    ~ItalianChef(){std::cout << "italian destroy" << std::endl;}
+    ItalianChef(std::string);
+    ~ItalianChef();
     bool askSecret(std::string, int, int);
 };

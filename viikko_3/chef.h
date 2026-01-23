@@ -3,13 +3,9 @@
 
 class Chef{
   public:
-    Chef(std::string yo): chefName{yo}{
-        std::cout << "constructor" << std::endl;
-    }
+    Chef(std::string);
     Chef(){}
-    ~Chef(){
-      std::cout << "destroy" << std::endl;
-    }
+    ~Chef();
     std::string getName();
     int makeSalad(int);
     int makeSoup(int);
