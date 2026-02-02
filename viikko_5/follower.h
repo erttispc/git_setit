@@ -6,6 +6,6 @@ class Follower{
 public:
     Follower* next=nullptr;
     Follower(std::string);
-    std::string getNimi();
-    void paivitys(std::string);
+    std::string getName();
+    void update(std::string);
 };

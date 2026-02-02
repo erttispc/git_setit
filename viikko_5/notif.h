@@ -5,9 +5,9 @@
 class Notificator{
     Follower *follower=nullptr;
 public:
-    Notificator(){};
-    void lisaa(Follower*);
-    void poista(Follower*);
-    void tulosta();
-    void postita(std::string);
+    Notificator();
+    void add(Follower*);
+    void remove(Follower*);
+    void print();
+    void post(std::string);
 };
