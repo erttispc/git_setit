@@ -12,6 +12,10 @@ void Notificator::add(Follower* x){
 
 void Notificator::remove(Follower* x){
     std::cout << "Notificator is removing follower " << x->getName() << std::endl;
+    if(follower==x){
+        follower=x->next;
+        return;
+    }
     Follower* temp=follower;
     while(follower!=nullptr){
         if(follower->next==x){
