@@ -101,16 +101,19 @@ int main ()
             vector<Student>::iterator itr=find_if(studentList.begin(),studentList.end(),[tempString](Student& x){
                 return tempString==x.getName();
             });
-            itr->printStudentInfo();
+            if(itr!=studentList.end()){
+                itr->printStudentInfo();
+            }
+            else cout << "Student with that name not found" << '\n';
           // Kysy käyttäjältä opiskelijan nimi
 		  // Etsi studentListan opiskelijoista algoritmikirjaston
 		  // find_if funktion avulla löytyykö käyttäjän antamaa nimeä
 		  // listalta. Jos löytyy, niin tulosta opiskelijan tiedot.
-          break;
+            break;
         }
-        default:
-          cout<< "Wrong selection, stopping..."<<endl;
-          break;
+            default:
+            cout<< "Wrong selection, stopping..."<<endl;
+            break;
       }
     }while(selection < 5);
     return 0;
